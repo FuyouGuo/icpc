@@ -16,4 +16,5 @@
     #define DEBUG(x) std::cerr << #x << '=' << x << std::endl
     #define MAX3(a,b,c) max(a,max(b,c))
     #define MIN3(a,b,c) min(a,min(b,c))
+    #define CLR(x, v) memset(x, v, sizeof(x))
 #endif

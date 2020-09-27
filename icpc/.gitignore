@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+output/
+vendor/
+*.txt
+*.o
+*.out
+*.swp
+.DS_Store
+*.iml
+*_local.sh
+*_local.conf
+.un
