@@ -160,36 +160,9 @@ using namespace my_icpc_stl;
 
 int main(){
     ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-    int n=read<int>();
-    int m=read<int>();
-    int a[n],b[m],p[m][2];
-    cfor(i,0,m-1) std::fill_n(p[i], 2, -1);
-    cfor(i,0,n-1) a[i]=read<int>();
-    cfor(i,0,m-1) b[i]=read<int>();
-    int i=0,j=0;
-    for(int i=0, j=0; i<m&&j<n; i++){
-        while(j<n&&b[i]!=a[j]) j++;
-        p[i][0]=j;
-        j++;
-    }
-    for(int i=m-1,j=n-1; i>=0&&j>=0; i--){
-        while(j>=0&&b[i]!=a[j]) j--;
-        p[i][1]=j;
-        j--;
-    }
-    int ans = 0;
-    for(int i=0;i<m;i++){
-        if(p[i][0] == -1 || p[i][1]==-1 || p[i][0]>=n || p[i][1] < p[i][0]) {
-            ans=-1;
-            break;
-        } else if(p[i][1]>p[i][0]) {
-            ans = 1;
-        }
-    }
-    if(ans<1){
-        puts("No");
-    } else {
-        puts("Yes");
+    int T=read<int>();
+    while(T--){
+        
     }
     return 0;
 }
