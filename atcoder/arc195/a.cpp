@@ -3,7 +3,7 @@ using namespace std;
 char *p1, *p2, buf[100000];
 #define nc() (p1 == p2 && (p2 = (p1 = buf) + fread(buf, 1, 100000, stdin), p1 == p2) ? EOF : *p1++)
 template <class T>
-inline T read() {
+inline T Read() {
     char c = nc();
     T f = 1, ans = 0;
     while (c < '0' || c > '9') {
@@ -21,13 +21,13 @@ int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int n = read<int>();
-    int m = read<int>();
+    int n = Read<int>();
+    int m = Read<int>();
     for (int i = 0; i < n; i++) {
-        a[i] = read<int>();
+        a[i] = Read<int>();
     }
     for (int i = 0; i < m; i++) {
-        b[i] = read<int>();
+        b[i] = Read<int>();
     }
     int it = 0, mul = 0;
     for (int i = 0; i < n; i++) {
